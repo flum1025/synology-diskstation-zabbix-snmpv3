@@ -1206,7 +1206,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                     <item_prototypes>
                         <item_prototype>
                             <name>Storage Size on {#IFDESCR}</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.2.1.25.2.3.1.5.{#IFINDEX}</snmp_oid>
                             <key>host.hrStorage.hrStorageTable.hrStorageEntry.hrStorageSize[{#IFINDEX}]</key>
@@ -1295,7 +1295,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>Storage Used on {#IFDESCR}</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.2.1.25.2.3.1.6.{#IFINDEX}</snmp_oid>
                             <key>host.hrStorage.hrStorageTable.hrStorageEntry.hrStorageUsed[{#IFINDEX}]</key>
@@ -1509,7 +1509,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                     <item_prototypes>
                         <item_prototype>
                             <name>Incomming Packets on Interface {#IFNAME}</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.2.1.31.1.1.1.6.{#SNMPINDEX}</snmp_oid>
                             <key>ifMIB.ifMIBObjects.ifXTable.ifXEntry.ifHCInOctets.[{#IFNAME}]</key>
@@ -1560,7 +1560,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>Outgoing Packets on Interface {#IFNAME}</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.2.1.31.1.1.1.10.{#SNMPINDEX}</snmp_oid>
                             <key>ifMIB.ifMIBObjects.ifXTable.ifXEntry.ifHCOutOctets.[{#IFNAME}]</key>
@@ -1701,7 +1701,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                     <item_prototypes>
                         <item_prototype>
                             <name>Space Load of Disk {#SNMPVALUE}</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.102.1.1.7.{#SNMPINDEX}</snmp_oid>
                             <key>spaceIO.spaceIOTable.spaceIOEntry.spaceIOLA.[{#SNMPINDEX}]</key>
@@ -1743,7 +1743,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} byte(s) read since boot</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.102.1.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>spaceIO.spaceIOTable.spaceIOEntry.spaceIONRead.[{#SNMPINDEX}]</key>
@@ -1785,7 +1785,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} read access(es) since boot</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.102.1.1.5.{#SNMPINDEX}</snmp_oid>
                             <key>spaceIO.spaceIOTable.spaceIOEntry.spaceIONReads.[{#SNMPINDEX}]</key>
@@ -1827,7 +1827,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} write accesses since boot</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.102.1.1.6.{#SNMPINDEX}</snmp_oid>
                             <key>spaceIO.spaceIOTable.spaceIOEntry.spaceIONWrites.[{#SNMPINDEX}]</key>
@@ -1869,7 +1869,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} byte(s) written since boot</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.102.1.1.4.{#SNMPINDEX}</snmp_oid>
                             <key>spaceIO.spaceIOTable.spaceIOEntry.spaceIONWritten.[{#SNMPINDEX}]</key>
@@ -1989,7 +1989,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                     <item_prototypes>
                         <item_prototype>
                             <name>Storage Load on Disk {#SNMPVALUE}</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.101.1.1.8.{#SNMPINDEX}</snmp_oid>
                             <key>storageIO.storageIOTable.storageIOEntry.storageIOLA.[{#SNMPINDEX}]</key>
@@ -2031,7 +2031,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} byte(s) read since boot</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.101.1.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>storageIO.storageIOTable.storageIOEntry.storageIONRead.[{#SNMPINDEX}]</key>
@@ -2073,7 +2073,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} byte(s) written since boot</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.101.1.1.4.{#SNMPINDEX}</snmp_oid>
                             <key>storageIO.storageIOTable.storageIOEntry.storageIONWritten.[{#SNMPINDEX}]</key>
@@ -2115,7 +2115,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} read access(es) since boot</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.101.1.1.5.{#SNMPINDEX}</snmp_oid>
                             <key>storageIO.storageIOTable.storageIOEntry.storageIOReads.[{#SNMPINDEX}]</key>
@@ -2157,7 +2157,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} write access(es) since boot</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.101.1.1.6.{#SNMPINDEX}</snmp_oid>
                             <key>storageIO.storageIOTable.storageIOEntry.storageIOWrites.[{#SNMPINDEX}]</key>
@@ -2276,7 +2276,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                     <item_prototypes>
                         <item_prototype>
                             <name>{#SNMPVALUE} Model</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.2.1.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>synoDisk.diskTable.diskEntry.diskModel.[{#SNMPINDEX}]</key>
@@ -2318,7 +2318,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} Status</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.2.1.1.5.{#SNMPINDEX}</snmp_oid>
                             <key>synoDisk.diskTable.diskEntry.diskStatus.[{#SNMPINDEX}]</key>
@@ -2367,7 +2367,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} Temperature</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.2.1.1.6.{#SNMPINDEX}</snmp_oid>
                             <key>synoDisk.diskTable.diskEntry.diskTemperature.[{#SNMPINDEX}]</key>
@@ -2409,7 +2409,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} Type</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.2.1.1.4.{#SNMPINDEX}</snmp_oid>
                             <key>synoDisk.diskTable.diskEntry.diskType.[{#SNMPINDEX}]</key>
@@ -2599,7 +2599,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                     <item_prototypes>
                         <item_prototype>
                             <name>{#ATTRNAME} on {#SNMPVALUE}</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.5.1.1.9.{#SNMPINDEX}</snmp_oid>
                             <key>synologyDiskSMART.diskSMARTTable.diskSMARTEntry.[{#SNMPINDEX}]</key>
@@ -2696,7 +2696,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                     <item_prototypes>
                         <item_prototype>
                             <name>Disk Latency Read on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.10.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNDiskLatencyRead[{#LUNINDEX}]</key>
@@ -2738,7 +2738,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>Disk Latency Write on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.11.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNDiskLatencyWrite[{#LUNINDEX}]</key>
@@ -2780,7 +2780,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>IOPS Read on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.8.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNIopsRead[{#LUNINDEX}]</key>
@@ -2822,7 +2822,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>IOPS Write on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.9.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNIopsWrite[{#LUNINDEX}]</key>
@@ -2864,7 +2864,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>IO Size Read on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.14.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNIoSizeRead[{#LUNINDEX}]</key>
@@ -2906,7 +2906,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>IO Size Write on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.15.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNIoSizeWrite[{#LUNINDEX}]</key>
@@ -2948,7 +2948,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>Network Latency TX on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.12.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNNetworkLatencyTx[{#LUNINDEX}]</key>
@@ -2990,7 +2990,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>Throughput Read High on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.4.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNThroughputReadHigh[{#LUNINDEX}]</key>
@@ -3032,7 +3032,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>Throughput Read Low on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.5.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNThroughputReadLow[{#LUNINDEX}]</key>
@@ -3074,7 +3074,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>Throughput Write High on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.6.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNThroughputWriteHigh[{#LUNINDEX}]</key>
@@ -3116,7 +3116,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>Throughput Write Low on LUN {#LUNNAME} ({#LUNUID})</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.4.1.4.1.6574.104.1.1.7.[{#LUNINDEX}]</snmp_oid>
                             <key>synologyiSCSILUN.iSCSILUNTable.iSCSILUNEntry.iSCSILUNThroughputWriteLow[{#LUNINDEX}]</key>
@@ -3196,7 +3196,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                     <item_prototypes>
                         <item_prototype>
                             <name>{#SNMPVALUE} Users</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.6.1.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>synologyService.serviceTable.serviceEntry.serviceUsers.[{#SNMPINDEX}]</key>
@@ -3315,7 +3315,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                     <item_prototypes>
                         <item_prototype>
                             <name>{#SNMPVALUE} RAID Name</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.3.1.1.2.{#SNMPINDEX}</snmp_oid>
                             <key>synoRaid.raidTable.raidEntry.raidName.[{#SNMPINDEX}]</key>
@@ -3357,7 +3357,7 @@ DiskStationManager > Terminal SNMP > SNMP > Enable SNMPv3 set all values and set
                         </item_prototype>
                         <item_prototype>
                             <name>{#SNMPVALUE} RAID Status</name>
-                            <type>4</type>
+                            <type>6</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>.1.3.6.1.4.1.6574.3.1.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>synoRaid.raidTable.raidEntry.raidStatus.[{#SNMPINDEX}]</key>
